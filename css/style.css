@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header start */
+/* Styling the navigation bar */
+nav {
+    background-color: #07c0ee;
+    text-align: center; /* Centering the navigation bar */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0 auto; /* Centering the unordered list */
+    padding: 0;
+    display: inline-block; /* Making the navigation bar inline-block to center it */
+}
+
+nav ul li {
+    display: inline; /* Displaying list items inline */
+}
+
+nav ul li a {
+    font-size:20px;
+    font-weight: bold;
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #fff;
+    border-radius: 14px;
+    
+}
+.logo{
+    padding: 10px;
+
+}
+.logo img{
+height: 70px;
+width: 70px;
+border-radius: 50%;
+}
+/* header end */
+/* slider start */
+.slider-container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .slide {
+    flex: 0 0 100%;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 600px;
+  }
+  
+  .slider-controls {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .slider-controls button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin: 0 5px;
+  }
+
+/* slider end */
+
+/* product start */
+.card {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+.card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+}
+.card-content {
+    padding: 20px;
+}
+.card-title {
+    font-size: 1.2rem;
+    margin: 0 0 10px;
+}
+.card-description {
+    color: #666;
+    margin-bottom: 10px;
+}
+.card-price {
+    color: #333;
+    font-weight: bold;
+}
+.btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.container-card{
+    padding: 100px;
+    display: flex;
+    width: 80rem;
+    flex-wrap:wrap ;
+    justify-content: space-between;
+    margin: auto;
+
+}
+.titel{
+    font-size: 50px;
+    font-weight: bold;
+}
+/* product end */
+
+/* contact start */
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .container h2 {
+    text-align: center;
+  }
+  
+  .container form {
+    display: grid;
+    gap: 20px;
+  }
+  
+  .container form input[type="text"],
+  .container form input[type="email"],
+  .container form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .container form textarea {
+    resize: none;
+  }
+  
+  .container form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .container form input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+/* contact end */
+
+/* about page start */
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    margin: 8px;
+  }
+  
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+/* about page end */
+/*pagintion start */
+.pagination {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.pagination a {
+    color: #007bff;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+}
+
+.pagination a:hover {
+    background-color: #f1f1f1;
+}
+
+.pagination .active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.pagination .prev,
+.pagination .next {
+    background-color: #f1f1f1;
+}
+
+.pagination .prev:hover,
+.pagination .next:hover {
+    background-color: #ddd;
+}
+/*pagintion end */
+
+/* contact page start */
+/* CSS for Contact Form */
+.contact-form {
+    width: 400px;
+    margin: 0 auto;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input[type="text"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.form-group textarea {
+    height: 150px;
+}
+.form-group input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* CSS for Google Map */
+.map-container {
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+}
+#map {
+    width: 100%;
+    height: 100%;
+}
+/* contact page end */
+
+/* footer start */
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+  padding-top: 40px;
+}
+/* footer end */
